@@ -1,23 +1,23 @@
----
-layout: default
----
+<!doctype html>
 
-<div class="home">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
 
-  <h1 class="page-heading">Posts</h1>
+  <title>Platypus Blue</title>
+  <meta name="description" content="Platypus Blue">
+  <meta name="author" content="Platypus Blue">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<body>
+	<div style="display:table;text-align:center;margin:auto;margin-top: 150px">
+		<img src="_images/platypus.png" style="width:100%; max-width:500px;">
+		<h1>Platypus Blue</h1>
+		<p>Great things come to those who wait...</p>
+	</div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</body>
+</html>
